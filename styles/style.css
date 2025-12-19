@@ -1,0 +1,132 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}   
+   
+/*DEFINIÇÃO DAS FONTES*/
+@font-face{
+    font-family: "Unbounded";
+    src: url("../fontes/Unbounded-Bold.ttf")
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: url("../fontes/Poppins-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*ESTILOS DO DESKTOP*/
+   section{
+    width: 792px;
+    /*height: 446px;*/
+    margin: 0px auto;
+   }
+
+   h1{
+    /*famílias de fonte: serif, sans-serif, monospace, cursiv, fantasy*/
+        color: rgba(255, 255, 255);
+        text-align: center;
+        font-size: 64px;
+        font-family: "Unbounded", sans-serif;
+        margin-top: 109px;
+        /*font-weight: bold;*/
+    }
+    p{
+        color: rgba(255, 255, 255);
+        text-align: center;
+        font-size: 24px;
+        font-family: "Poppins", sans-serif;
+        margin: 24px auto 0px;
+        width: 792px;
+    }
+    body{
+        background-color:rgba(14, 16, 20, 1);
+    }
+    span{
+        color:rgba(151, 71, 255, 1);
+    }
+    a{
+        color: #FFFFFFFF;
+        background-color: rgba(151, 71, 255, 1);
+        justify-content: center;
+        font-size: 24px;
+        text-decoration: none; 
+        font-family: "Poppins";
+        width: 340px;
+        height: 66px;
+        border-radius: 36px;
+        display: block;
+
+        margin: 40px auto;
+
+        text-align: center;
+        line-height: 66px;
+    
+        /*
+        padding-left: 48px;
+        padding-top: 24px;
+        padding-rigth: 48px;
+        padding-bottom: 24px
+        */
+    }
+    a:hover{
+        background-color: #8233E8;
+    }
+    #img{
+        display: block;
+        margin: 0px auto; 
+        width: 792px; 
+    } 
+    #logo{
+        display: block;
+        margin: 75px auto auto 70px;
+        width: 209px;
+        height: 34px;
+    }
+
+/*MODIFICAÇÕES TABLET*/
+
+@media(max-width: 768px){
+    
+    #logo{
+        margin: 65px 0px 0px 60px;
+    }
+    p{
+        width: 648px;
+        font-size: 24px;
+    }
+    section{
+        width: 648px;
+        margin: 171px 60px 48px 60px;
+    }
+
+}
+
+/*MODIFICAÇÕES CEULUAR*/
+@media(max-width: 375px){
+    #logo{
+        margin: 31px 0px 0px 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        width: 340px;
+    }
+    #img{
+        width: 340px;
+    }
+    section{
+        width: 340px;
+        margin: 126px auto 43px;
+    }
+}
